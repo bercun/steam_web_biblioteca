@@ -1,0 +1,14 @@
+pyserial>=3.5
+requests>=2.31.0
+
+# Import bd/steam.sql, start Apache/MySQL in XAMPP
+# On Arduino: upload steam/arduino/steam_display/steam_display.ino
+# On PC:
+# cd /Applications/XAMPP/xamppfiles/htdocs/steambiblioteca/steam
+# pip install -r requirements.txt
+# python bridge.py --list-ports
+# python bridge.py --port /dev/tty.usbmodemXXXX
+# Focus the terminal and scan the code (or type a title + Enter).
+# LCD and the web page show the title and price, or "Book not found".
+# Hardware: USB scanner as a keyboard, Arduino USB on the same PC.
+# LCD I2C address is 0x27 (if the screen stays blank, try 0x3F in the .ino).

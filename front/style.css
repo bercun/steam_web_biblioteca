@@ -1,0 +1,151 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+    overflow-x: clip;
+    background-color: beige;
+    font-family: Inter, sans-serif;
+}
+
+main {
+    width: 100%;
+}
+
+main > section {
+    width: 100%;
+    padding-inline: clamp(20px, 3vw, 40px);
+}
+
+h2 {
+    font-family: Forum, serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #0C0C0E;
+    margin: 20px 0;
+}
+
+.line {
+    width: 50px;
+    margin: 0 auto;
+    border: 1px solid #0C0C0E;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+#search-input {
+    flex: 1;
+    min-width: 0;
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #0C0C0E;
+    font-size: 16px;
+}
+
+#search-input:focus {
+    outline: 2px solid #BB945F;
+}
+
+#search-button {
+    width: 100px;
+    height: 45px;
+    border: 1px solid #0C0C0E;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    border-color: #BB945F;
+    background-color: #BB945F;
+    transition: all 0.3s linear;
+}
+
+.arduino-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: -20px auto 24px;
+}
+
+#arduino-connect-button {
+    min-height: 40px;
+    padding: 0 16px;
+    border: 1px solid #0C0C0E;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#arduino-connect-button:hover {
+    border-color: #BB945F;
+    background-color: #BB945F;
+    transition: all 0.3s linear;
+}
+
+#arduino-status {
+    font-size: 14px;
+    text-align: center;
+}
+
+#search-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 80px;
+}
+
+.result-message {
+    margin: 40px 0 20px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+}
+
+.result-card {
+    width: min(100%, 420px);
+    padding: 16px 20px;
+    border: 1px solid #0C0C0E;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.result-card h3 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+.result-card p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.4;
+}
