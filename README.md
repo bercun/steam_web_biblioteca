@@ -1,3 +1,5 @@
+# codigo de la pagina web 
+
 # Biblioteca Steam
 
 Aplicación web para buscar libros por código de barras en una base MySQL. Opcionalmente, el navegador puede enviar el resultado a un Arduino conectado por USB para mostrarlo en una pantalla OLED y señalarlo con LEDs y un buzzer.
